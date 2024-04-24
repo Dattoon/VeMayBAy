@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Trang Chủ</title>
+	<link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css.css">
+	<script src="script.js"></script>
+</head>
+<style>
+	.box-destination {
+		position: relative;
+		background-size: cover;
+		background-position: center;
+		height: 300px;
+		/* Adjust as needed */
+		border-radius: 15px;
+		/* Adjust as needed */
+		overflow: hidden;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+
+	.box-destination .description,
+	.box-destination .overlay {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 20px;
+		background: rgba(0, 0, 0, 0.5);
+		/* Adjust as needed */
+		color: #fff;
+		transition: .5s ease;
+		backface-visibility: hidden;
+	}
+
+	.box-destination .overlay {
+		background: rgba(0, 0, 0, 0);
+		opacity: 0;
+		top: 0;
+	}
+
+	.box-destination:hover .overlay {
+		opacity: 1;
+	}
+
+	.box-destination .description .city {
+		font-size: 24px;
+		/* Adjust as needed */
+		font-weight: bold;
+	}
+
+	.box-destination .description .detail,
+	.box-destination .overlay .extra-info {
+		font-size: 16px;
+		/* Adjust as needed */
+	}
+
+	.box-destination .description .btn-book {
+		display: inline-block;
+		margin-top: 10px;
+		padding: 10px 20px;
+		background: #ff0000;
+		/* Adjust as needed */
+		color: #fff;
+		text-decoration: none;
+	}
+</style>
+
+<body>
+	<header>
+		<div class="Header_wrapper__IXtx_ Header_home-header__haQj4">
+			<div class="container flex justify-between align-center Header_container__jM6_b">
+				<div class="flex align-center gap-40 h-full">
+					<div class="Header_logo__tC3WE">
+						<a href="./trangchu.html">
+							<img src="./images/logo.png" decoding="async"
+								style="position:absolute;top:0;left:-20px;;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:210px;height:70px;min-width:100%;min-height:100%;"
+								loading="lazy">
+						</a>
+					</div>
+
+					<div class="flex gap-24 h-full align-center cursor-pointer Header_nav-container__MeHQZ">
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./trangchu.html">Trang chủ</a></label></div>
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./gioithieu.html">Giới thiệu</a></label></div>
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./sanpham.html">Vé máy bay</a></label></div>
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./tintuc.html">Tin tức</a></label></div>
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./dangnhap.html">Đăng nhập</a></label></div>
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./dangky.html">Đăng ký</a></label></div>
+						<div class=" Header_menu__jRq_R h-full flex align-center "><label for="" class="md"><a
+									href="./donhang.html">Giỏ hàng </a></label></div>
+					</div>
+					<div class="flex gap-16 align-center">
+						<div class="Header_menu__jRq_R"></div>
+						<div><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-color__7QnYK  ">
+								<div class="label sm"><a href="https://www.youtube.com/@dattoon">Liên hệ: Bộ tứ siêu đẳng</a></div>
+							</button></div>
+
+					</div>
+				</div>
+			</div>
+	</header>
+	<section>
+		<main>
+            <div class="main-container">
+                <section class="main-slider">
+                    <!-- slide -->
+                    <div class="slider">
+                        <div class="list">
+                        <div class="item">
+                            <img src="./images/trangchu/da-lat.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./images/trangchu/ho-chi-minh.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./images/trangchu/ha-noi.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="./images/trangchu/da-nang.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- nut bam trai phai -->
+                    <div class="buttons">
+                        <button id="previous"><</button>
+                        <button id="next">></button>
+                    </div>
+                    <!-- nut giua cac slide-->
+                    <ul class="dots">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+             </section>  
+            </div>
+        </main>
+	</section>
+
+	<main class="">
+		<div class="container Home_section__E0q_L">
+			<div class="SectionHeader_sectionHeader__60CR7 SectionHeader_center__SgbXz ">
+				<div class="SectionHeader_title__eE2Rf">
+					<h4>Các điểm đến của FourAirlines</h4>
+				</div><label class="lg SectionHeader_description__2ZD1p">Khám phá vẻ đẹp tuyệt vời của máy bay</label>
+
+			</div>
+			<div class="Home_cardList__4oqth">
+				<a href="">
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/OIP.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Đà Nẵng</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+					</div>
+
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/HCM.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Hồ Chí Minh</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+					</div>
+
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/DL.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Đà Lạt</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+
+					</div>
+
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/HN.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Hà Nội</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+
+					</div>
+
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/NT.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Nha Trang</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+
+					</div>
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/hue.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Huế</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+
+					</div>
+					<div class="Card_card__rC1zg CategoryCard_categoryCard__X6aCz">
+						<div class="CategoryCard_imageWrapper__ZoxLj">
+							<div style="width:100%;height:100%;position:relative;overflow:hidden"><img alt=""
+									src="./images/trangchu/CT.jpg" width="100%" height="100%" loading="lazy"
+									style="object-fit:cover"></div>
+						</div>
+						<div class="CategoryCard_body__UUyeo">
+							<h6>Cần Thơ</h6>
+						</div>
+						<div class="CategoryCard_footer__O2fDe"><button type="button"
+								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-outline__YRytX  ">
+								<div class="label sm"><a href="./sanpham.html">Xem ngay</a></div>
+							</button></div>
+
+					</div>
+				</a>
+			</div>
+		</div>
+
+	</main>
+	<footer>
+		<div class="flex justify-center Footer_footer1__GxwEZ">
+			<div class="Footer_footer__URfJd container">
+				<div class=" flex flex-col gap-20"><a href="/"><span
+							style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"><span
+								style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img
+									alt="" aria-hidden="true" src="./images/logo.png"
+									style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img
+								src="./images/logo.png" decoding="async" data-nimg="intrinsic" srcset="./images/logo.png"
+								style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"><noscript></noscript></span></a><label
+						class="md" style="color: var(--gray-300);">Hãng hàng không FourAirlines<br><br>123 Bến xe củ
+						thành phố Cần Thơ<br><br></label></div>
+				<div class="Footer_footer-list__VYqPy flex justify-between gap-32">
+					<div class="flex flex-col gap-16"><span class="detail-sm">GIỚI THIỆU</span>
+						<div class="flex flex-col gap-12"><a href=""
+								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Điều khoản
+								và điều kiện</a><a href=""
+								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Chính sách
+								riêng tư</a><a href="" class="subheading sm Footer_anchor__jQ0He"
+								target="_blank" rel="noreferrer">Hướng dẫn sử
+								dụng</a><a href="" class="subheading sm Footer_anchor__jQ0He"
+								target="_blank" rel="noreferrer">Hình thức thanh toán</a><a href=""
+								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Liên
+								hệ</a><a href="" class="subheading sm Footer_anchor__jQ0He"
+								target="_blank" rel="noreferrer">Hotline: 0123456789</a><a
+								href="" class="subheading sm Footer_anchor__jQ0He"
+								target="_blank" rel="noreferrer">Email: FourAirlines@gamil.fall.com</a></div>
+					</div>
+					<div class="flex flex-col gap-16"><span class="detail-sm">ĐIỂM ĐẾN</span>
+						<div class="flex flex-col gap-12">
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Đà Nẵng</a>
+							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Hồ Chí Minh</a>
+							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Đà Lạt</a>
+							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Hà Nội</a>
+							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Nha Trang</a>
+							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Cần Thơ</a>
+						</div>
+					</div>
+					<div class="flex flex-col gap-16"><span class="detail-sm">MÁY BAY</span>
+						<div class="flex flex-col gap-12"><a href="" class="subheading sm Footer_anchor__jQ0He"
+								target="_blank" rel="noreferrer">Tin tức</a><a href=""
+								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Quy định
+								chung và lưu ý</a><a href=""
+								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Câu hỏi
+								thường gặp</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+<script>
+	let slider = document.querySelector('.slider .list');
+	let items = document.querySelectorAll('.slider .list .item');
+	let next = document.getElementById('next');
+	let prev = document.getElementById('previous');
+	let dots = document.querySelectorAll('.slider .dots li');
+
+	let lengthItems = items.length - 1;
+	let active = 0;
+	next.onclick = function(){
+		active = active + 1 <= lengthItems ? active + 1 : 0;
+		reloadSlider();
+	}
+	prev.onclick = function(){
+		active = active - 1 >= 0 ? active - 1 : lengthItems;
+		reloadSlider();
+	}
+	let refreshInterval = setInterval(()=> {next.click()}, 3000);
+	function reloadSlider(){
+		slider.style.left = -items[active].offsetLeft + 'px';
+		// 
+		let last_active_dot = document.querySelector('.slider .dots li.active');
+		last_active_dot.classList.remove('active');
+		dots[active].classList.add('active');
+
+		clearInterval(refreshInterval);
+		refreshInterval = setInterval(()=> {next.click()}, 3000);
+		
+	}
+	dots.forEach((li, key) => {
+		li.addEventListener('click', ()=>{
+			active = key;
+			reloadSlider();
+		})
+	})
+	window.onresize = function(event) {
+		reloadSlider();
+	};
+</script>
+
+
+</html>
