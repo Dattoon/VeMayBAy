@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="icon" href="./hinh.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Đăng ký</title>
+	<link rel="icon" href="./hinh.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Đăng ký</title>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.css">
 	<link rel="stylesheet" href="css.css">
 	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 	<header>
 		<div class="Header_wrapper__IXtx_ Header_home-header__haQj4">
@@ -17,8 +19,8 @@
 					<div class="Header_logo__tC3WE">
 						<a href="./trangchu.html">
 							<img src="./images/logo.png" decoding="async"
-							style="position:absolute;top:0;left:-20px;;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:210px;height:70px;min-width:100%;min-height:100%;"
-							loading="lazy">
+								style="position:absolute;top:0;left:-20px;;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:210px;height:70px;min-width:100%;min-height:100%;"
+								loading="lazy">
 						</a>
 					</div>
 
@@ -43,18 +45,19 @@
 
 						<div><button type="button"
 								class="Button_button__QHarr  Button_button-sm__ljQtM Button_button-color__7QnYK  ">
-								<div class="label sm"><a href="https://www.youtube.com/@dattoon">Liên hệ: Bộ tứ siêu đẳng</a></div>
+								<div class="label sm"><a href="https://www.facebook.com/phan.duy.5680">Liên hệ: Bộ tứ siêu
+										đẳng</a></div>
 							</button></div>
 
 					</div>
 				</div>
 			</div>
 	</header>
-    <section class="container-signup">
+	<section class="container-signup">
 		<div class="container-DN">
 			<form action="" method="POST" class="form" id="form-1">
 				<h3>Đăng Ký</h3>
-				 
+
 				<div class="container-form-input">
 					<input id="fullname" type="text" name="fullname" required>
 					<label for="fullname" class="form-label">Họ và tên</label>
@@ -93,26 +96,32 @@
 	</section>
 	<script src="./validator.js"></script>
 	<script>
-		 //Output
-		 	Validator({
-				form:'#form-1',
-				errorSelector: '.form-message',
-				rules:[
-					Validator.isRequired('#fullname','Vui lòng nhập trường này'),
-					Validator.isRequired('#email','Vui lòng nhập trường này'),
-					Validator.isEmail('#email'),
-					Validator.isRequired('#loginname','Vui lòng nhập trường này'),
-					Validator.minLength('#password',8),
-					Validator.isRequired('#repassword','Vui lòng nhập trường này'),
-					Validator.isConfirmed('#repassword',function (){
-						return document.querySelector('#form-1 #password').value;
-					},'Mật khẩu nhập lại chính xác')
-				],
-				onSubmit: function (data){
-					console.log(data);
-				}
+		//Output
+		Validator({
+			form: '#form-1',
+			errorSelector: '.form-message',
+			rules: [
+				Validator.isRequired('#fullname', 'Vui lòng nhập trường này'),
+				Validator.isRequired('#email', 'Vui lòng nhập trường này'),
+				Validator.isEmail('#email'),
+				Validator.isRequired('#loginname', 'Vui lòng nhập trường này'),
+				Validator.minLength('#password', 8),
+				Validator.isRequired('#repassword', 'Vui lòng nhập trường này'),
+				Validator.isConfirmed('#repassword', function () {
+					return document.querySelector('#form-1 #password').value;
+				}, 'Mật khẩu nhập lại chính xác')
+			],
+			onSubmit: function (data) {
+				console.log(data);
+				document.getElementById("btn-login").addEventListener("click", function () {
+					alert("Bạn đã đăng ký thành công!");
+				});
 
-			});
+			}
+
+		});
+
+
 	</script>
 	<footer>
 		<div class="flex justify-center Footer_footer1__GxwEZ">
@@ -122,42 +131,49 @@
 								style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"><img
 									alt="" aria-hidden="true" src="./images/logo.png"
 									style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img
-								src="./images/logo.png" decoding="async" data-nimg="intrinsic" srcset="./images/logo.png"
+								src="./images/logo.png" decoding="async" data-nimg="intrinsic"
+								srcset="./images/logo.png"
 								style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"><noscript></noscript></span></a><label
 						class="md" style="color: var(--gray-300);">Hãng hàng không FourAirlines<br><br>123 Bến xe củ
 						thành phố Cần Thơ<br><br></label></div>
 				<div class="Footer_footer-list__VYqPy flex justify-between gap-32">
 					<div class="flex flex-col gap-16"><span class="detail-sm">GIỚI THIỆU</span>
-						<div class="flex flex-col gap-12"><a href=""
-								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Điều khoản
-								và điều kiện</a><a href=""
-								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Chính sách
-								riêng tư</a><a href="" class="subheading sm Footer_anchor__jQ0He"
-								target="_blank" rel="noreferrer">Hướng dẫn sử
-								dụng</a><a href="" class="subheading sm Footer_anchor__jQ0He"
-								target="_blank" rel="noreferrer">Hình thức thanh toán</a><a href=""
+						<div class="flex flex-col gap-12"><a href="" class="subheading sm Footer_anchor__jQ0He"
+								target="_blank" rel="noreferrer">Điều khoản
+								và điều kiện</a><a href="" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Chính sách
+								riêng tư</a><a href="" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Hướng dẫn sử
+								dụng</a><a href="" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Hình thức thanh toán</a><a href=""
 								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Liên
-								hệ</a><a href="" class="subheading sm Footer_anchor__jQ0He"
-								target="_blank" rel="noreferrer">Hotline: 0123456789</a><a
-								href="" class="subheading sm Footer_anchor__jQ0He"
-								target="_blank" rel="noreferrer">Email: FourAirlines@gamil.fall.com</a></div>
+								hệ</a><a href="" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Hotline: 0123456789</a><a href=""
+								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Email:
+								FourAirlines@gamil.fall.com</a></div>
 					</div>
 					<div class="flex flex-col gap-16"><span class="detail-sm">ĐIỂM ĐẾN</span>
 						<div class="flex flex-col gap-12">
-							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Đà Nẵng</a>
-							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Hồ Chí Minh</a>
-							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Đà Lạt</a>
-							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Hà Nội</a>
-							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Nha Trang</a>
-							<a href="./sanpham.html"class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Cần Thơ</a>
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Đà Nẵng</a>
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Hồ Chí Minh</a>
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Đà Lạt</a>
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Hà Nội</a>
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Nha Trang</a>
+							<a href="./sanpham.html" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Cần Thơ</a>
 						</div>
 					</div>
 					<div class="flex flex-col gap-16"><span class="detail-sm">MÁY BAY</span>
 						<div class="flex flex-col gap-12"><a href="" class="subheading sm Footer_anchor__jQ0He"
 								target="_blank" rel="noreferrer">Tin tức</a><a href=""
 								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Quy định
-								chung và lưu ý</a><a href=""
-								class="subheading sm Footer_anchor__jQ0He" target="_blank" rel="noreferrer">Câu hỏi
+								chung và lưu ý</a><a href="" class="subheading sm Footer_anchor__jQ0He" target="_blank"
+								rel="noreferrer">Câu hỏi
 								thường gặp</a>
 						</div>
 					</div>
@@ -166,4 +182,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>

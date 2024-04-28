@@ -89,7 +89,7 @@ function Validator(options){
 
 
 
-// Rule
+// Rulea
 Validator.isRequired = function(selector,message){
         return {
             selector: selector,

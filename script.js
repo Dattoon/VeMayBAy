@@ -1,4 +1,4 @@
-/*Bài tập 1: hàm tìm kiếm trên header tất cả các trang*/
+/*hàm tìm kiếm trên header tất cả các trang*/
 function checkKeySearch(e)
 {
 	var key = event.which ||event.keyCode;
@@ -12,13 +12,13 @@ function doSearch()
 	if(frm.words.value.length>0)
 		frm.submit();  
 }
-//Bài tập 2: xác thực dữ liệu trang html5
+// xác thực dữ liệu trang html5
 //trang Đăng Nhập
 function frmValidate5(frm)
 {
 	return frm.checkValidity();
 }
-//Bài tập 2: xác thực dữ liệu tất cả trình duyệt
+// xác thực dữ liệu tất cả trình duyệt
 
 //trang Đăng Nhập
 function loginValidate(frm)
